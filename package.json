@@ -1,0 +1,26 @@
+{
+  "name": "shmtu2RSS",
+  "version": "0.0.1",
+  "description": "使用RSS订阅上海海事大学",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simonsmh/shmtu2RSS.git"
+  },
+  "keywords": [
+    "RSS"
+  ],
+  "author": "simonsmh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/simonsmh/shmtu2RSS/issues"
+  },
+  "homepage": "https://github.com/simonsmh/shmtu2RSSS/blob/master/README.md",
+  "devDependencies": {},
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.2",
+    "log4js": "^2.3.5",
+    "request": "^2.83.0"
+  }
+}
