@@ -8,7 +8,8 @@ var app = express();
 app.all('*', require('./routes/all'));
 app.get('/events', require('./routes/events'));
 app.get('/notes', require('./routes/notes'));
-
+app.get('/jwc/:type', require('./routes/jwc'));
+// app.listen(1203);
 var socket = '/var/run/shmtu2RSS.socket'
 if(fs.existsSync(socket)){
 fs.unlinkSync(socket);
