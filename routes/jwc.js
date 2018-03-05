@@ -32,7 +32,7 @@ module.exports = function (req, res) {
             <language>zh-cn</language>
             <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
             <ttl>300</ttl>`
-        for (var i = 1; i < text.length; i++) {
+        for (var i = 0; i < text.length; i++) {
             var infos = text.slice(i).eq(0)
             var extra = text.parents('.gvItemNormal')
             var title = infos.attr('title')

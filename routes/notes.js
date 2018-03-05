@@ -25,7 +25,7 @@ module.exports = function (req, res) {
             <language>zh-cn</language>
             <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
             <ttl>300</ttl>`
-        for (var i = 1; i <= $('.date', text).length; i++) {
+        for (var i = 0; i < $('.date', text).length; i++) {
             var date = $('span', 'span', text).slice(i).eq(0).attr('content')
             var title = $('.title', text).slice(i).eq(0).text()
             var link = host + $('a', text).slice(i).eq(0).attr('href')
