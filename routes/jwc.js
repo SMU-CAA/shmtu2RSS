@@ -37,8 +37,8 @@ module.exports = function (req, res) {
             var extra = text.parents('.gvItemNormal')
             var title = infos.attr('title')
             var link = host + infos.attr('href')
-            var date = extra.next().next().next().next().slice(i).eq(0).text()
-            var catogory = extra.prev().prev().slice(i).eq(0).text()
+            var date = extra.next().next().next().next().slice(text.length - i - 1).eq(0).text()
+            var catogory = extra.prev().prev().slice(text.length - i - 1).eq(0).text()
             rss += `
             <item>
                 <title><![CDATA[${title}]]></title>
